@@ -27,4 +27,10 @@ pipeline {
             }
         }
     }
+         stage('mvn clean sonar:sonar') {
+             steps {
+                 sh 'mvn clean'
+             }
+         }    
+    }
 }
